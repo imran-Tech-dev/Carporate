@@ -1,0 +1,13 @@
+name: My First Workflow
+
+on:
+  push:
+    branches: [ "main" ]
+
+jobs:
+  build:
+    runs-size: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v4
+    - name: Run a one-line script
+      run: echo "Hello, GitHub Actions workflow is running successfully!"
